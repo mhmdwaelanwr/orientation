@@ -457,7 +457,8 @@ function digitsOnly_(value) {
 function safeSheetText_(value) {
   const text = String(value || '');
   if (!text) return '';
-  return "'" + text;
+  // Prevent spreadsheet formula execution without altering normal values such as emails.
+  return /^[=+\-@]/.test(text) ? "'" + text : text;
 }
 
 function clean_(value, maxLength) {
