@@ -312,7 +312,7 @@ function createRegistrationId_() {
 function iframeResponse_(payload) {
   const safeJson = JSON.stringify(payload).replace(/</g, '\u003c');
   const html = `<!doctype html><html><body><script>
-    window.parent.postMessage(Object.assign({source:'cbc-orientation'}, ${safeJson}), '*');
+    window.top.postMessage(Object.assign({source:'cbc-orientation'}, ${safeJson}), 'https://mhmdwaelanwr.github.io');
   <\/script></body></html>`;
 
   return HtmlService
