@@ -1,5 +1,5 @@
 const CONFIG = {
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycbyGoQdR5xgepqns7HpyWoHjfJr4cDEMWaBFHoSzUo3uAFgjrrGZvWUKW2TvPLjIWCdy/exec",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbwX-aQVbASZr-njKm0SG8XzSlin3-Klv5ZVlnegDDE14Cv751K7CJIXeoE3BiGJ6-CzNA/exec",
   eventDate: "To be announced",
   eventTime: "To be announced",
   eventLocation: "AOU Egypt"
